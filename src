@@ -1,0 +1,16 @@
+# Adicionar as notas
+Notas = []
+Nota1 = float(input('Nota 1: '))
+Nota2 = float(input('Nota 2: '))
+Nota3 = float(input('Nota 3: '))
+
+Notas.append(Nota1)
+Notas.append(Nota2)
+Notas.append(Nota3)
+
+# Calcular a média e conferir se foi aprovado ou não
+media = sum(Notas) / len(Notas)
+if media >= 7:
+    print(f"Média: {media} - Aprovado")
+else:
+    print(f"Média: {media} - Reprovado")
